@@ -1,30 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="refresh" content="0; url=https://tidd.ly/4jzuKDU" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecionando...</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        padding-top: 50px;
-        background-color: #f9f9f9;
-        color: #333;
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh" content="3; url=https://tidd.ly/4jzuKDU" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Indo para a oferta...</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #fafafa;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 360px;
+      text-align: center;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h1 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .sub {
+      font-size: 15px;
+      color: #666;
+    }
+
+    .loader {
+      margin: 30px auto 10px;
+      border: 5px solid #eee;
+      border-top: 5px solid #0077cc;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+    }
+
+    a {
+      color: #0077cc;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
       }
-      a {
-        color: #0077cc;
-        text-decoration: none;
-        font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
       }
-      a:hover {
-        text-decoration: underline;
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-    </style>
-  </head>
-  <body>
-    <p>Redirecionando você para a página desejada...</p>
-    <p>Se não for redirecionado automaticamente, <a href="https://tidd.ly/4jzuKDU">clique aqui</a>.</p>
-  </body>
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>ESTAMOS LEVANDO VOCÊ ATÉ AS OFERTAS!</h1>
+    <p class="sub">Por favor, aguarde...</p>
+    <div class="loader"></div>
+    <p style="margin-top: 20px;">Ou <a href="https://tidd.ly/4jzuKDU">clique aqui</a> se não for redirecionado.</p>
+  </div>
+</body>
 </html>
