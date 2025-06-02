@@ -37,8 +37,25 @@
     }
 
     h1 {
+      white-space: nowrap;
+      overflow: visible;
+      text-overflow: clip;
       font-size: 22px;
       margin-bottom: 10px;
+    }
+
+    /* Tablets (largura até 768px) */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 18px;
+      }
+    }
+
+    /* Smartphones (largura até 480px) */
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 16px;
+      }
     }
 
     .sub {
