@@ -5,23 +5,25 @@
   <meta http-equiv="refresh" content="3; url=https://tidd.ly/4jzuKDU" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="robots" content="noindex, nofollow" />
-  <title>Indo para a oferta...</title>
+  <title>Pesquisei Comprei - Redirecionando...</title>
   <style>
-    * {
-      box-sizing: border-box;
+    /* Reset básico */
+    html, body {
+      height: 100%;
       margin: 0;
       padding: 0;
-    }
-
-    body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
       background: #fafafa;
       color: #222;
       display: flex;
+      justify-content: center; /* centraliza horizontal */
+      align-items: center;     /* centraliza vertical */
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    }
+
+    main {
+      width: 100%;
+      max-width: 360px;
       padding: 20px;
     }
 
@@ -30,10 +32,9 @@
       padding: 30px 20px;
       border-radius: 16px;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-      width: 100%;
-      max-width: 360px;
       text-align: center;
       animation: fadeIn 0.8s ease-in-out;
+      width: 100%;
     }
 
     h1 {
@@ -57,6 +58,18 @@
     @media (max-width: 480px) {
       h1 {
         font-size: 16px;
+      }
+
+      .card p {
+        margin-top: 10px !important;
+      }
+
+      .card div {
+        margin-top: 6px !important;
+      }
+      
+      .text-info {
+        font-size: 13px !important;
       }
     }
 
@@ -85,6 +98,18 @@
       text-decoration: underline;
     }
 
+    .footer {
+      font-size: 13px;
+      color: #999;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background: #fafafa;
+    }
+
     @keyframes spin {
       to {
         transform: rotate(360deg);
@@ -101,14 +126,63 @@
         transform: translateY(0);
       }
     }
+
+    /* Botão estilo ofertas */
+    .button-ofertas {
+      display: inline-block;
+      background-color: #ff6600;
+      color: #fff;
+      font-weight: 700;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 15px;
+      transition: background-color 0.3s ease;
+      border: none;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 4px 0 #cc5200;
+    }
+
+    .button-ofertas:hover,
+    .button-ofertas:focus {
+      background-color: #cc5200;
+      outline: none;
+    }
+
+    .button-ofertas:active {
+      box-shadow: none;
+      transform: translateY(2px);
+    }
+
+    /* Texto do aviso menor e discreto */
+    .text-info {
+      font-size: 14px;
+      color: #444;
+      margin-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>REDIRECIONANDO ATÉ OFERTAS!</h1>
-    <p class="sub">Por favor, aguarde...</p>
-    <div class="loader"></div>
-    <p style="margin-top: 20px;">Ou <a href="https://tidd.ly/4jzuKDU">clique aqui</a> se não for redirecionado.</p>
-  </div>
+  <main>
+    <div class="card">
+      <h1>REDIRECIONANDO ATÉ OFERTAS!</h1>
+      <p class="sub">Por favor, aguarde...</p>
+      <div class="loader"></div>
+
+      <p class="text-info" style="text-align: center;">
+        Caso não seja redirecionado
+      </p>
+      <div style="text-align: center; margin-top: 10px;">
+        <a href="https://tidd.ly/4jzuKDU" class="button-ofertas" role="button" tabindex="0">
+          Clique aqui
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    © 2025 PesquiseiComprei.com. Todos os direitos reservados.
+  </footer>
 </body>
 </html>
